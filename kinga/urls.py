@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app_api.views import hello
-from app_api.api import randomszam
+from app_api.api import randomszam, szoveg
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', hello),
-    path('api/randomszam/', randomszam)
+    path('api/randomszam/', randomszam),
+    path('api/szoveg/', szoveg),
 ]
